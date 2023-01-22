@@ -7,7 +7,7 @@
 #SBATCH --mem=32G ## how much RAM do you need per computer/node (this affects your FairShare score so be careful to not ask for more than you need))
 #SBATCH --job-name=sample_job ## When you run squeue -u  this is how you can identify the job
 #SBATCH --output=output.log ## standard out and standard error goes to this file
-module load python/3.84
+module load python/3.8.4
 
 python3 -m pip install --user numpy torch video-diffusion-pytorch
 
